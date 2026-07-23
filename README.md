@@ -1,20 +1,20 @@
-# MariaDB Setup and Configuration Guide for Windows
+# MySQL Setup and Configuration Guide (Windows / Ubuntu)
 
-This guide explains how to set up MariaDB, create a database, and Create Database User
+This guide explains how to set up mysql, create a database, and Create Database User
 
-## 1. Installing MariaDB
+## 1. Installing mysql
 
-Installing MariaDB on Ubntu
+Installing mysql on Ubntu
 
-```shell
-apt update && apt install mariadb-server -y
+```bash
+apt update && apt install mysql-client -y
 ```
 
-## 2. Securing MariaDB
+## 2. Securing mysql
 
 Open the Command Prompt as Administrator and run the following command to secure your installation:
 
-```shell
+```bash
 
 mysql_secure_installation
 ```
@@ -30,7 +30,7 @@ Open terminal and login to MariaDB:
 
 ```bash
 
-mysql -u root -p
+mysql -h (endpoint of database) -u admin -p
 ```
 
 Enter the root password when prompted.
@@ -73,7 +73,3 @@ EXIT FROM DATABASE
 ```sql
 
 EXIT;
-```
-
-
-
